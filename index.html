@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+    <title>payment</title>
+</head>
+<body>
+    <div class="contenar">
+        <div class="hed">
+            <div class="p_img_title_hed">
+                <img src="imgs/person-raised-hand.svg" alt="img person" id="img_persen_hed">
+                <h3 class="title_hed">درگاه پرداخت</h3>
+            </div>
+            <a href="https://github.com/alireza-shokri" class="github_link">github.com/alireza-shokri</a>
+        </div>
+        <form action="" autocomplete="on">
+        <main class="main">
+            <!-- 1 -->
+                <div class="p_info_time">
+                    <p class="title_info">اطلاعات کارت</p>
+                    <p class="title_time">زمان باقی مانده  :
+                        <span class="time">10:00</span>
+                    </p>
+                </div>
+            <!-- 2 -->
+                <div class="p_number_kart">
+                    <p class="title_number_kart">شماره کارت</p>
+                    <div class="box_number_kart">
+                        <input type="text" name="part_1" id="part_1" class="input_4_box" maxlength="4" required>
+                        <input type="text" name="part_2" id="part_2" class="input_4_box" maxlength="4" required>
+                        <input type="text" name="part_3" id="part_3" class="input_4_box" maxlength="4" required>
+                        <input type="text" name="part_4" id="part_4" class="input_4_box" maxlength="4" required>
+                    </div>
+                </div>
+            <!-- 3 -->
+                <div class="p_ramz_internati">
+                    <p class="title_ramz_internati">رمز اینترنتی</p>
+                    <div class="p_eye_ramz_internati">
+                        <i class="bi bi-eye-slash"></i>
+                        <i class="bi bi-eye"></i>
+                        <input type="password" id="input_ramz_internati" name="password"  required >
+                    </div>
+                </div>
+            <!-- 4 -->
+                <div class="p_cvv2">
+                    <p class="title_cvv2">CVV2</p>
+                    <input type="text" name="cvv2"  id="cvv2"  maxlength="3" required>
+                </div>
+                <!-- 5 -->
+                 <div class="p_date">
+                    <p class="title_date">تاریخ انقضا</p>
+                    <div class="p_year_month">
+                        <div class="p_year_span">
+                            <span class="text_year">سال</span>
+                            <!-- <input list="year_list" name="year" id="input_year" required> -->
+                         <select name="year" id="year_list">
+                               
+                            </select>
+                        </div> 
+                        <div class="p_month_span">
+                            <span class="text_month">ماه</span>
+                            <!-- <input list="month_list" name="month" id="input_month" required> -->
+                            <select name="month" id="month_list">
+                              
+                            </select>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- 6 -->
+                  <div class="p_captcha">
+                    <p class="title_captcha">کد امنیتی</p>
+                    <div class="box_captcha">
+                        <input type="text" name="input_captcha" id="input_captcha" required>
+                        <div class="p_captcha_img_rfresh">
+                            <img src="imgs/arrow-clockwise.svg" alt="img rfresh" id="img_rfresh" >
+                            <input type="text" id="jenaret_captcha" readonly name="jenaret_captcha">
+                        </div>
+                    </div>
+                  </div>
+                  <!-- 7 -->
+                   <div class="p_email">
+                    <p class="titel_email">ایمیل اختیاری</p>
+                    <input type="email" name="email" id="input_email" >
+                   </div>
+
+                   <div class="buttns">
+                        <div class="btn">
+                            <button class="pay">خرید</button>
+                            <button class="cansle">انصراف</button>
+                        </div>
+                   </div>
+                </main>
+            </form>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
